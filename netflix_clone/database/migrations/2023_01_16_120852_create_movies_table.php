@@ -18,7 +18,6 @@ return new class extends Migration
             $table->string('movie_name');
             $table->string('movie_description');
             $table->string('movie_gener');
-            // $table->softDeletes();
             $table->timestamps();
         });
     }

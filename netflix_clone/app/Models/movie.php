@@ -11,6 +11,5 @@ class movie extends Model
     use HasFactory;
 
     protected $fillable=['movie_name','movie_description','movie_gener'];
-    protected $dates = ['deleted_at'];
 
 }

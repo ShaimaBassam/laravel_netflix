@@ -85,10 +85,9 @@ class MovieController extends Controller
      * @param  \App\Models\movie  $movie
      * @return \Illuminate\Http\Response
      */
-    public function destroy(movie $id)
+    public function destroy($id)
     {
-        $MovieEdit = movie::findorFail($id);
-        $MovieEdit->delete();
+        movie::findorFail($id)->delete();
         return redirect()->route('movies.index')
             ->withSuccess(__('User deleted successfully.'));
     }
